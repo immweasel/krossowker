@@ -1,0 +1,27 @@
+.geo {
+  display: flex;
+  justify-content: space-between;
+  min-height: 22px;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &_country {
+    margin-left: 5px;
+    background: none;
+    border: none;
+    color: var(--orange-color);
+    text-decoration: underline 1px solid var(--orange-color);
+    appearance: none;
+    font-size: 14px;
+  }
+
+  &_phone {
+    color: var(--orange-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+  }
+}

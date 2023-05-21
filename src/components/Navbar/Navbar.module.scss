@@ -1,0 +1,38 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+
+  &_logo {
+
+  }
+
+  &_links {
+    display: flex;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--orange-color);
+    font-weight: normal;
+  }
+
+  &__links_container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 637px;
+  }
+
+  &_active {
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--orange-color);
+    font-weight: bold;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    width: 112px;
+  }
+}
+
