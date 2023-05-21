@@ -1,20 +1,13 @@
-import React, { useState } from 'react';
-import { Link, Routes, Route, useLocation } from 'react-router-dom';
-import Menu from "../Menu/Menu";
+import React, {useState} from 'react';
+import {Link, Routes, Route, useLocation} from 'react-router-dom';
 import styles from './Navbar.module.scss';
-
-import Logo from '../../assets/images/logo.png';
-
-import ProfileIcon from '../../assets/icons/profile.svg';
-import BasketIcon from '../../assets/icons/basket.svg';
-import SearchIcon from '../../assets/icons/search.svg';
-import Baasket from '../Baasket/Baasket';
 import Catalog from "../Catalog/Catalog";
-import DeliveriesPayment from '../DeliveriesPayment/DeliveriesPayment';
-import MainPage from '../MainPage/MainPage';
-import Authorization from "../Authorization/Authorization";
-import WearPage from "../WearPage/WearPage";
-import Profile from "../Profile/Profile";
+
+import Logo from '../../assets/images/logo.png'
+
+import ProfileIcon from '../../assets/icons/profile.svg'
+import BasketIcon from '../../assets/icons/basket.svg'
+import SearchIcon from '../../assets/icons/search.svg'
 
 function Navbar() {
     const [activePath, setActivePath] = useState('/');
@@ -29,9 +22,16 @@ function Navbar() {
         <>
             <nav className={styles.navbar}>
                 <Link to={'/'}>
-                    <h1 className={styles.navbar_logo}>КРОССОВКЕР.</h1>
+                    <img src={Logo} alt="logo_image" className={styles.navbar_logo}/>
                 </Link>
                 <div className={styles.navbar__links_container}>
+                    <Link
+                        className={`${styles.navbar_links} ${activePath === '/' ? styles.navbar_active : ''}`}
+                        to={'/'}
+                        onClick={() => handleActivePath('/')}
+                    >
+                        Главная
+                    </Link>
                     <Link
                         className={`${styles.navbar_links} ${activePath === '/catalog' ? styles.navbar_active : ''}`}
                         to={'/catalog'}
@@ -63,29 +63,26 @@ function Navbar() {
                 </div>
                 <div className={styles.navbar__container}>
                     <Link to={'/Search'}>
-                        <img src={SearchIcon} alt="SearchIcon" />
+                        <img src={SearchIcon} alt="SearchIcon"/>
                     </Link>
                     <Link to={'/Basket'}>
-                        <img src={BasketIcon} alt="BasketIcon" />
+                        <img src={BasketIcon} alt="BasketIcon"/>
                     </Link>
-                    <Link to={'/auth'}>
-                        <img src={ProfileIcon} alt="ProfileIcon" />
+                    <Link to={'/profile'}>
+                        <img src={ProfileIcon} alt="ProfileIcon"/>
                     </Link>
                 </div>
             </nav>
 
             <Routes>
-                <Route path={'/'} element={<MainPage />} />
-                <Route path={'/catalog'} element={<Menu />} />
-                <Route path={'/delivery'} element={<DeliveriesPayment />} />
-                <Route path={'/about_us'} element={'about us'} />
-                <Route path={'/contact'} element={'contact'} />
-                <Route path={'/auth'} element={<Authorization />} />
-                <Route path={'/basket'} element={<Baasket />} />
-                <Route path={'/product/:id'} element={<WearPage />} />
-                <Route path={'/search'} element={'search'} />
-                <Route path={'/catalog-items'} element={<Catalog />} />
-                <Route path={'/profile'} element={<Profile />} />
+                <Route path={'/'} element={'Main page'}/>
+                <Route path={'/catalog'} element={<Catalog/>}/>
+                <Route path={'/delivery'} element={'delivery'}/>
+                <Route path={'/about_us'} element={'about us'}/>
+                <Route path={'/contact'} element={'contact'}/>
+                <Route path={'/profile'} element={'profile'}/>
+                <Route path={'/basket'} element={'profile'}/>
+                <Route path={'/search'} element={'profile'}/>
             </Routes>
         </>
     );
