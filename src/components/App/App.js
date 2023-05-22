@@ -1,6 +1,6 @@
 import styles from './App.module.scss'
-import Navbar from "../components/Navbar/Navbar";
-import Geo from "../components/Geo/Geo";
+import Navbar from "../Navbar/Navbar";
+import Geo from "../Geo/Geo";
 
 function App() {
     return (
