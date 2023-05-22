@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {Link, Routes, Route, useLocation} from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link, Routes, Route, useLocation } from 'react-router-dom';
 import styles from './Navbar.module.scss';
 import Catalog from "../Catalog/Catalog";
 
@@ -8,6 +8,7 @@ import Logo from '../../assets/images/logo.png'
 import ProfileIcon from '../../assets/icons/profile.svg'
 import BasketIcon from '../../assets/icons/basket.svg'
 import SearchIcon from '../../assets/icons/search.svg'
+import Baasket from '../Baasket/Baasket';
 
 function Navbar() {
     const [activePath, setActivePath] = useState('/');
@@ -22,7 +23,7 @@ function Navbar() {
         <>
             <nav className={styles.navbar}>
                 <Link to={'/'}>
-                    <img src={Logo} alt="logo_image" className={styles.navbar_logo}/>
+                    <img src={Logo} alt="logo_image" className={styles.navbar_logo} />
                 </Link>
                 <div className={styles.navbar__links_container}>
                     <Link
@@ -63,26 +64,26 @@ function Navbar() {
                 </div>
                 <div className={styles.navbar__container}>
                     <Link to={'/Search'}>
-                        <img src={SearchIcon} alt="SearchIcon"/>
+                        <img src={SearchIcon} alt="SearchIcon" />
                     </Link>
                     <Link to={'/Basket'}>
-                        <img src={BasketIcon} alt="BasketIcon"/>
+                        <img src={BasketIcon} alt="BasketIcon" />
                     </Link>
                     <Link to={'/profile'}>
-                        <img src={ProfileIcon} alt="ProfileIcon"/>
+                        <img src={ProfileIcon} alt="ProfileIcon" />
                     </Link>
                 </div>
             </nav>
 
             <Routes>
-                <Route path={'/'} element={'Main page'}/>
-                <Route path={'/catalog'} element={<Catalog/>}/>
-                <Route path={'/delivery'} element={'delivery'}/>
-                <Route path={'/about_us'} element={'about us'}/>
-                <Route path={'/contact'} element={'contact'}/>
-                <Route path={'/profile'} element={'profile'}/>
-                <Route path={'/basket'} element={'profile'}/>
-                <Route path={'/search'} element={'profile'}/>
+                <Route path={'/'} element={'Main page'} />
+                <Route path={'/catalog'} element={<Catalog />} />
+                <Route path={'/delivery'} element={'delivery'} />
+                <Route path={'/about_us'} element={'about us'} />
+                <Route path={'/contact'} element={'contact'} />
+                <Route path={'/profile'} element={'profile'} />
+                <Route path={'/basket'} element={<Baasket /> } />
+                <Route path={'/search'} element={'profile'} />
             </Routes>
         </>
     );
