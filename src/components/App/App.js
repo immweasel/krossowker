@@ -1,7 +1,7 @@
 import styles from './App.module.scss'
 import Navbar from "../Navbar/Navbar";
 import Geo from "../Geo/Geo";
-import Menu from "../Menu/Menu";
+import Footer from "../Footer/Footer";
 
 function App() {
     return (
@@ -11,9 +11,7 @@ function App() {
                 <Navbar/>
             </section>
 
-            <section className={styles.main}>
-                <Menu/>
-            </section>
+            <Footer/>
         </div>
     );
 }
