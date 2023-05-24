@@ -11330,5 +11330,61 @@
       "population": 14011,
       "subject": "Московская область"
     }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Скидки"
+    },
+    {
+      "id": 2,
+      "name": "Новая коллекция"
+    },
+    {
+      "id": 3,
+      "name": "Одежда"
+    },
+    {
+      "id": 4,
+      "name": "Обувь"
+    },
+    {
+      "id": 5,
+      "name": "adidas"
+    },
+    {
+      "id": 6,
+      "name": "Nike"
+    },
+    {
+      "id": 7,
+      "name": "Puma"
+    }
+  ],
+  "wear": [
+    {
+      "brand": "6",
+      "category": "footwear",
+      "name": "Nike Air Max 270",
+      "color": "black",
+      "size": "42",
+      "price": 8999
+    },
+    {
+      "brand": "7",
+      "category": "apparel",
+      "name": "Puma Essential Logo Hoodie",
+      "color": "gray",
+      "size": "M",
+      "price": 3499
+    },
+    {
+      "brand": "5 ",
+      "category": "footwear",
+      "name": "Adidas Ultra Boost",
+      "color": "white",
+      "size": "40",
+      "price": 7999
+    }
   ]
 }
