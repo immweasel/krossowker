@@ -1,6 +1,7 @@
 import styles from './App.module.scss'
 import Navbar from "../Navbar/Navbar";
 import Geo from "../Geo/Geo";
+import Footer from "../Footer/Footer";
 
 function App() {
     return (
@@ -9,6 +10,8 @@ function App() {
                 <Geo/>
                 <Navbar/>
             </section>
+
+            <Footer/>
         </div>
     );
 }
