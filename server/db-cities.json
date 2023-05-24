@@ -11333,13 +11333,32 @@
   ],
   "categories": [
     {
-      "1": "Скидки",
-      "2": "Новая коллекция",
-      "3": "Одежда",
-      "4": "Обувь",
-      "5": "adidas",
-      "6": "NIKE",
-      "7": "PUMA"
+      "id": 1,
+      "name": "Скидки"
+    },
+    {
+      "id": 2,
+      "name": "Новая коллекция"
+    },
+    {
+      "id": 3,
+      "name": "Одежда"
+    },
+    {
+      "id": 4,
+      "name": "Обувь"
+    },
+    {
+      "id": 5,
+      "name": "adidas"
+    },
+    {
+      "id": 6,
+      "name": "Nike"
+    },
+    {
+      "id": 7,
+      "name": "Puma"
     }
   ],
   "wear": [
@@ -11360,7 +11379,7 @@
       "price": 3499
     },
     {
-      "brand": "5",
+      "brand": "5 ",
       "category": "footwear",
       "name": "Adidas Ultra Boost",
       "color": "white",
