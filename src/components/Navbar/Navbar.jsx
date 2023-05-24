@@ -3,11 +3,11 @@ import {Link, Routes, Route, useLocation} from 'react-router-dom';
 import Menu from "../Menu/Menu";
 import styles from './Navbar.module.scss';
 
-import Logo from '../../assets/images/logo.png'
+import Logo from '../../assets/images/logo.png';
 
-import ProfileIcon from '../../assets/icons/profile.svg'
-import BasketIcon from '../../assets/icons/basket.svg'
-import SearchIcon from '../../assets/icons/search.svg'
+import ProfileIcon from '../../assets/icons/profile.svg';
+import BasketIcon from '../../assets/icons/basket.svg';
+import SearchIcon from '../../assets/icons/search.svg';
 import Baasket from '../Baasket/Baasket';
 import Catalog from "../Catalog/Catalog";
 
