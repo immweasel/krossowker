@@ -30,17 +30,6 @@ function CategoriesList() {
         fetchCategories()
     }, [])
 
-    const handleCheckedItem = (id) => {
-        setData((prevData) =>
-            prevData.map((item) => {
-                if (item.id === id) {
-                    return {...item, checked: !item.checked};
-                }
-                return item;
-            })
-        );
-    };
-
     return (
         <div className={styles.categoriesItem}>
             <div className={styles.categoriesItem_header}>
