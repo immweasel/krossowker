@@ -1,5 +1,7 @@
 import React from "react";
 import styles from './Menu.module.scss'
+import Catalog from "../Catalog/Catalog";
+import {Link} from "react-router-dom";
 
 import Man from '../../assets/images/mans.png'
 import Wooman from '../../assets/images/wooman.png'
@@ -17,9 +19,11 @@ function Menu() {
                         <p className={styles.menu__card_desc}>
                             МУЖСКАЯ ОДЕЖДА И ОБУВЬ
                         </p>
-                        <button className={styles.menu__card_btn}>
-                            <img src={ArrowIcon} alt="ArrowIcon"/>
-                        </button>
+                        <Link to='/catalog-items'>
+                            <button className={styles.menu__card_btn}>
+                                <img src={ArrowIcon} alt="ArrowIcon"/>
+                            </button>
+                        </Link>
                     </div>
                 </div>
 
@@ -30,18 +34,22 @@ function Menu() {
                         <p className={styles.menu__card_desc}>
                             ЖЕНСКАЯ ОДЕЖДА И ОБУВЬ
                         </p>
-                        <button className={styles.menu__card_btn}>
-                            <img src={ArrowIcon} alt="ArrowIcon"/>
-                        </button>
+                        <Link to='/catalog-items'>
+                            <button className={styles.menu__card_btn}>
+                                <img src={ArrowIcon} alt="ArrowIcon"/>
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>
 
             <div className={styles.menu__unique}>
                 <h1 className={styles.menu__unique_header}>УНИКАЛЬНОЕ ПРЕДЛОЖЕНИЕ</h1>
-                <button className={styles.menu__unique_btn}>
-                    <img src={ArrowIcon} alt="Arrow-icon"/>
-                </button>
+                <Link to='/catalog-items'>
+                    <button className={styles.menu__unique_btn}>
+                        <img src={ArrowIcon} alt="Arrow-icon"/>
+                    </button>
+                </Link>
             </div>
         </div>
     )

@@ -9,6 +9,7 @@ import ProfileIcon from '../../assets/icons/profile.svg'
 import BasketIcon from '../../assets/icons/basket.svg'
 import SearchIcon from '../../assets/icons/search.svg'
 import Baasket from '../Baasket/Baasket';
+import Catalog from "../Catalog/Catalog";
 
 function Navbar() {
     const [activePath, setActivePath] = useState('/');
@@ -84,6 +85,7 @@ function Navbar() {
                 <Route path={'/profile'} element={'profile'}/>
                 <Route path={'/basket'} element={<Baasket/>}/>
                 <Route path={'/search'} element={'profile'}/>
+                <Route path={'/catalog-items'} element={<Catalog/>}/>
             </Routes>
         </>
     );
