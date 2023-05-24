@@ -11368,15 +11368,17 @@
       "name": "Nike Air Max 270",
       "color": "black",
       "size": "42",
-      "price": 8999
+      "price": 8999,
+      "img": "src/assets/images/shoe1.png"
     },
     {
       "brand": "7",
       "category": "apparel",
       "name": "Puma Essential Logo Hoodie",
       "color": "gray",
-      "size": "M",
-      "price": 3499
+      "size": "42",
+      "price": 3499,
+      "img": "src/assets/images/shoe2.png"
     },
     {
       "brand": "5 ",
@@ -11384,7 +11386,8 @@
       "name": "Adidas Ultra Boost",
       "color": "white",
       "size": "40",
-      "price": 7999
+      "price": 7999,
+      "img": "src/assets/images/shoe3.png"
     }
   ]
 }

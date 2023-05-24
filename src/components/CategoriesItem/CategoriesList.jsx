@@ -9,6 +9,11 @@ import CheckboxItem from "./CheckboxItem";
 function CategoriesList() {
     const [data, setData] = useState([])
     const [checkboxes, setCheckboxes] = useState({});
+    const [open, setOpen] = useState(true)
+
+    const handleToggleCategories = () => {
+        setOpen(!open); // Инвертируем состояние открытия/сворачивания
+    };
 
 // Функция для обновления состояния Checkbox по id
     const handleCheckboxChange = (id) => {
@@ -38,18 +43,22 @@ function CategoriesList() {
                     <h1 className={styles.categoriesItem_title}>Фильтр</h1>
                 </div>
 
-                <button>
+                <button onClick={handleToggleCategories}  className={styles.categoriesItem_btn}>
                     Свернуть
                 </button>
             </div>
-            {data.map(item => (
-                <CheckboxItem
-                    key={item.id}
-                    label={item.name}
-                    checked={checkboxes[item.id]}
-                    onChange={() => handleCheckboxChange(item.id)}
-                />
-            ))}
+            {open && (
+                <div>
+                    {data.map(item => (
+                        <CheckboxItem
+                            key={item.id}
+                            label={item.name}
+                            checked={checkboxes[item.id]}
+                            onChange={() => handleCheckboxChange(item.id)}
+                        />
+                    ))}
+                </div>
+            )}
         </div>
     )
 }
