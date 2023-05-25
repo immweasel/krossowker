@@ -11363,28 +11363,34 @@
   ],
   "wear": [
     {
-      "brand": "6",
+      "brand": "Nike",
       "category": "footwear",
-      "name": "Nike Air Max 270",
-      "color": "black",
-      "size": "42",
-      "price": 8999
+      "name": "Nike React Infinity Run Flyknit",
+      "color": "blue",
+      "size": "10",
+      "price": 10999,
+      "img": "https://goo.su/fxEu",
+      "descr": "Nike React Infinity Run Flyknit - это инновационные кроссовки с прочной и гибкой верхней частью из материала Flyknit, обеспечивающие отличную амортизацию и стабильность при беге. Они также имеют эргономичную конструкцию, которая помогает снизить риск травм и усталости ног."
     },
     {
-      "brand": "7",
-      "category": "apparel",
-      "name": "Puma Essential Logo Hoodie",
-      "color": "gray",
-      "size": "M",
-      "price": 3499
-    },
-    {
-      "brand": "5 ",
+      "brand": "Adidas",
       "category": "footwear",
-      "name": "Adidas Ultra Boost",
+      "name": "Adidas Ultraboost",
       "color": "white",
-      "size": "40",
-      "price": 7999
+      "size": "8",
+      "price": 12999,
+      "img": "https://goo.su/FNdhx",
+      "descr": "Adidas Ultraboost - это стильные кроссовки с превосходной амортизацией и энергопоглощением благодаря технологии Boost. Они имеют современный дизайн, прочную подошву и комфортную посадку, делая их идеальным выбором для спорта или повседневной носки."
+    },
+    {
+      "brand": "New Balance",
+      "category": "footwear",
+      "name": "New Balance Fresh Foam 1080v11",
+      "color": "gray",
+      "size": "9.5",
+      "price": 8999,
+      "img": "https://goo.su/RQaxag",
+      "descr": "New Balance Fresh Foam 1080v11 - это высококачественные кроссовки с мягкой амортизацией Fresh Foam, которая обеспечивает комфорт и поддержку при каждом шаге. Они также имеют легкий и вентилируемый верх, что делает их идеальным выбором для тренировок или активного образа жизни."
     }
   ]
 }

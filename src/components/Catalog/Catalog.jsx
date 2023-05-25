@@ -1,6 +1,7 @@
 import React from "react";
 import styles from './Catalog.module.scss'
 import CategoriesList from "../CategoriesItem/CategoriesList";
+import WearItem from "../WearItem/WearItem";
 
 function Catalog() {
 
@@ -11,7 +12,10 @@ function Catalog() {
                 color: '#fff'
             }}>Каталог</h1>
 
-            <CategoriesList/>
+            <div className={styles.catalog_container}>
+                <CategoriesList/>
+                <WearItem/>
+            </div>
         </div>
     )
 }
