@@ -28,6 +28,11 @@
       flex-direction: row;
       width: 713px;
       height: 182px;
+      margin-top: 34px;
+    }
+
+    &_card:first-child {
+      margin-top: 0;
     }
 
     &_first {
@@ -91,11 +96,32 @@
     }
 
     &_prices {
+      margin-left: 191px;
+    }
 
+    &_btnclose {
+      margin-top: 15px;
+      margin-left: 65px;
+      width: 22px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    &_btnclose:hover {
+      opacity: 0.6;
     }
 
     &_price {
+      margin-top: 96px;
       color: var(--orange-color);
+      width: 94px;
+      height: 29px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 29px;
     }
   }
 }
