@@ -11391,6 +11391,36 @@
       "price": 8999,
       "img": "https://goo.su/RQaxag",
       "descr": "New Balance Fresh Foam 1080v11 - это высококачественные кроссовки с мягкой амортизацией Fresh Foam, которая обеспечивает комфорт и поддержку при каждом шаге. Они также имеют легкий и вентилируемый верх, что делает их идеальным выбором для тренировок или активного образа жизни."
+    },
+    {
+      "brand": "Nike",
+      "category": "clothing",
+      "name": "Nike Sportswear Club Fleece Hoodie",
+      "color": "gray",
+      "size": "M",
+      "price": 4999,
+      "img": "https://goo.su/DsAzL",
+      "descr": "Nike Sportswear Club Fleece Hoodie - это удобный худи с капюшоном и фирменным логотипом Nike. Он выполнен из мягкого флисового материала, обеспечивая тепло и комфорт в холодную погоду."
+    },
+    {
+      "brand": "Adidas",
+      "category": "clothing",
+      "name": "Adidas Essentials 3-Stripes Pants",
+      "color": "black",
+      "size": "L",
+      "price": 3499,
+      "img": "https://goo.su/HZJnA1Z",
+      "descr": "Adidas Essentials 3-Stripes Pants - это стильные спортивные брюки с тремя полосками Adidas. Они имеют удобную посадку и эластичный пояс для комфортной посадки. Подходят для тренировок и повседневной носки."
+    },
+    {
+      "brand": "Puma",
+      "category": "clothing",
+      "name": "Puma Classics T7 Track Jacket",
+      "color": "red",
+      "size": "S",
+      "price": 3999,
+      "img": "https://goo.su/zbz5xjO",
+      "descr": "Puma Classics T7 Track Jacket - это классическая тренировочная куртка с узнаваемыми полосками Puma T7 по бокам. Она выполнена из легкого и дышащего материала, идеально подходит для занятий спортом или создания спортивного образа."
     }
   ]
 }

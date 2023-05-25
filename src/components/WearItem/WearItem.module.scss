@@ -2,25 +2,29 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 15px;
+  row-gap: 15px;
 
-  &__cont {
-    display: block;
-    width: 237px;
-    height: 176px;
-  }
 
-  &_img {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
 
   &_card {
     display: block;
     border: 1px solid var(--orange-color);
     width: 265px;
-    height: 275px;
+    height: 280px;
     padding: 12px;
+
+    &__cont {
+      display: block;
+      width: 237px;
+      height: 175px;
+    }
+
+    &_img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   &_title {
