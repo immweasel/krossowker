@@ -11363,6 +11363,7 @@
   ],
   "wear": [
     {
+      "id": 1,
       "brand": "Nike",
       "category": "footwear",
       "name": "Nike React Infinity Run Flyknit",
@@ -11370,27 +11371,68 @@
       "size": "10",
       "price": 10999,
       "img": "https://goo.su/fxEu",
+      "categoryId": 4,
       "descr": "Nike React Infinity Run Flyknit - это инновационные кроссовки с прочной и гибкой верхней частью из материала Flyknit, обеспечивающие отличную амортизацию и стабильность при беге. Они также имеют эргономичную конструкцию, которая помогает снизить риск травм и усталости ног."
     },
     {
+      "id": 2,
       "brand": "Adidas",
       "category": "footwear",
       "name": "Adidas Ultraboost",
       "color": "white",
       "size": "8",
       "price": 12999,
+      "categoryId": 4,
       "img": "https://goo.su/FNdhx",
       "descr": "Adidas Ultraboost - это стильные кроссовки с превосходной амортизацией и энергопоглощением благодаря технологии Boost. Они имеют современный дизайн, прочную подошву и комфортную посадку, делая их идеальным выбором для спорта или повседневной носки."
     },
     {
+      "id": 3,
       "brand": "New Balance",
       "category": "footwear",
       "name": "New Balance Fresh Foam 1080v11",
       "color": "gray",
       "size": "9.5",
       "price": 8999,
+      "categoryId": 4,
       "img": "https://goo.su/RQaxag",
       "descr": "New Balance Fresh Foam 1080v11 - это высококачественные кроссовки с мягкой амортизацией Fresh Foam, которая обеспечивает комфорт и поддержку при каждом шаге. Они также имеют легкий и вентилируемый верх, что делает их идеальным выбором для тренировок или активного образа жизни."
+    },
+    {
+      "id": 4,
+      "brand": "Nike",
+      "category": "clothing",
+      "name": "Nike Sportswear Club Fleece Hoodie",
+      "color": "gray",
+      "size": "M",
+      "price": 4999,
+      "categoryId": 3,
+      "img": "https://goo.su/DsAzL",
+      "descr": "Nike Sportswear Club Fleece Hoodie - это удобный худи с капюшоном и фирменным логотипом Nike. Он выполнен из мягкого флисового материала, обеспечивая тепло и комфорт в холодную погоду."
+    },
+    {
+      "id": 5,
+      "brand": "Adidas",
+      "category": "clothing",
+      "name": "Adidas Essentials 3-Stripes Pants",
+      "color": "black",
+      "size": "L",
+      "price": 3499,
+      "categoryId": 3,
+      "img": "https://goo.su/HZJnA1Z",
+      "descr": "Adidas Essentials 3-Stripes Pants - это стильные спортивные брюки с тремя полосками Adidas. Они имеют удобную посадку и эластичный пояс для комфортной посадки. Подходят для тренировок и повседневной носки."
+    },
+    {
+      "id": 6,
+      "brand": "Puma",
+      "category": "clothing",
+      "name": "Puma Classics T7 Track Jacket",
+      "color": "red",
+      "size": "S",
+      "price": 3999,
+      "categoryId": 3,
+      "img": "https://goo.su/zbz5xjO",
+      "descr": "Puma Classics T7 Track Jacket - это классическая тренировочная куртка с узнаваемыми полосками Puma T7 по бокам. Она выполнена из легкого и дышащего материала, идеально подходит для занятий спортом или создания спортивного образа."
     }
   ]
 }
