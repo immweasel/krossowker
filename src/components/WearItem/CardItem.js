@@ -6,6 +6,7 @@ function CardItem() {
     const [shoes, setShoes] = useState([])
 
     useEffect(() => {
+
         const fetchShoes = async () => {
             try {
                 const res = await axios.get('http://localhost:3001/wear')
@@ -14,8 +15,11 @@ function CardItem() {
                 console.log('Error: ', e)
             }
         }
+
         fetchShoes()
     }, [])
+
+
 
     return (
         <>
