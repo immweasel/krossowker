@@ -1,11 +1,15 @@
 .footer {
   display: block;
   height: 180px;
+  font-family: 'Montserrat', sans-serif;
 
   &_logo {
-    display: block;
-    height: 20px;
-    width: 201px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--orange-color);
+    font-size: 1.5em;
+    font-weight: 900;
+    user-select: none;
   }
 
   &__social {
