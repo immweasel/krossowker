@@ -10,6 +10,8 @@ import BasketIcon from '../../assets/icons/basket.svg';
 import SearchIcon from '../../assets/icons/search.svg';
 import Baasket from '../Baasket/Baasket';
 import Catalog from "../Catalog/Catalog";
+import DeliveriesPayment from '../DeliveriesPayment/DeliveriesPayment';
+import MainPage from '../MainPage/MainPage';
 
 function Navbar() {
     const [activePath, setActivePath] = useState('/');
@@ -24,16 +26,9 @@ function Navbar() {
         <>
             <nav className={styles.navbar}>
                 <Link to={'/'}>
-                    <img src={Logo} alt="logo_image" className={styles.navbar_logo}/>
+                    <h1 className={styles.navbar_logo}>КРОССОВКЕР.</h1>
                 </Link>
                 <div className={styles.navbar__links_container}>
-                    <Link
-                        className={`${styles.navbar_links} ${activePath === '/' ? styles.navbar_active : ''}`}
-                        to={'/'}
-                        onClick={() => handleActivePath('/')}
-                    >
-                        Главная
-                    </Link>
                     <Link
                         className={`${styles.navbar_links} ${activePath === '/catalog' ? styles.navbar_active : ''}`}
                         to={'/catalog'}
@@ -77,9 +72,9 @@ function Navbar() {
             </nav>
 
             <Routes>
-                <Route path={'/'} element={'Main page'}/>
+                <Route path={'/'} element={<MainPage/>}/>
                 <Route path={'/catalog'} element={<Menu/>}/>
-                <Route path={'/delivery'} element={'delivery'}/>
+                <Route path={'/delivery'} element={<DeliveriesPayment/>}/>
                 <Route path={'/about_us'} element={'about us'}/>
                 <Route path={'/contact'} element={'contact'}/>
                 <Route path={'/profile'} element={'profile'}/>
