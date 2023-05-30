@@ -1,7 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from './Footer.module.scss'
 
-import Logo from '../../assets/images/logo.png'
 import VkIcon from '../../assets/icons/vk.svg'
 import InstaIcon from '../../assets/icons/instagram.svg'
 import TwitterIcon from '../../assets/icons/twitter.svg'
@@ -10,8 +10,9 @@ function Footer() {
     return (
         <div className={styles.footer}>
             <div className={styles.footer__social}>
-                <img src={Logo} alt="Logo-Img" className={styles.footer_logo}/>
-
+                <Link to={'/'}>
+                    <p className={styles.footer_logo}>КРОССОВКЕР.</p>
+                </Link>
                 <div>
                     <p className={styles.footer__social_descr}>Мы в социальных сетях</p>
                     <div className={styles.footer__social_icon_container}>

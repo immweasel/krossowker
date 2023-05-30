@@ -1,16 +1,11 @@
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react";
 import styles from './Authorization.module.scss'
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom'
-
 
 function Authorization() {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
-    const [isLogged, setIsLogged] = useState(false)
-
-    const navigate = useNavigate()
-
+    const [user, setUser] = useState()
     const handleEmail = (e) => {
         setEmail(e.target.value)
     }
@@ -28,9 +23,7 @@ function Authorization() {
                 const users = res.data
                 users.map(user => {
                     if (user.email === email && user.password === password) {
-                        setIsLogged(true)
-                        console.log('Access', user)
-                        navigate('/profile', { state: { user } })
+                        return console.log('Access', user)
                     }
                 })
             })
@@ -39,6 +32,7 @@ function Authorization() {
             })
     }
 
+
     return (
         <div className={styles.authorization}>
             <h1 className={styles.authorization_header}>Авторизация</h1>
@@ -46,10 +40,10 @@ function Authorization() {
             <form onSubmit={handleSubmit}>
                 <div className={styles.authorization__inputs_container}>
                     <input className={styles.authorization_emailInput}
-                        type="email"
-                        onChange={handleEmail}
-                        value={email}
-                        placeholder='Email/номер телефона'
+                           type="email"
+                           onChange={handleEmail}
+                           value={email}
+                           placeholder='Email/номер телефона'
                     />
 
                     <input
