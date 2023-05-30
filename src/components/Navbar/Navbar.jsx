@@ -25,7 +25,9 @@ function Navbar() {
     return (
         <>
             <nav className={styles.navbar}>
-                <Link to={'/'}>
+                <Link 
+                to={'/'}
+                onClick={() => handleActivePath('/')}>
                     <h1 className={styles.navbar_logo}>КРОССОВКЕР.</h1>
                 </Link>
                 <div className={styles.navbar__links_container}>
