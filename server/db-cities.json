@@ -11434,5 +11434,31 @@
       "img": "https://goo.su/zbz5xjO",
       "descr": "Puma Classics T7 Track Jacket - это классическая тренировочная куртка с узнаваемыми полосками Puma T7 по бокам. Она выполнена из легкого и дышащего материала, идеально подходит для занятий спортом или создания спортивного образа."
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "login": "johndoe123",
+      "password": "password123",
+      "phone_num": "+1234567890",
+      "email": "johndoe@example.com"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "login": "janesmith456",
+      "password": "qwerty",
+      "phone_num": "+9876543210",
+      "email": "janesmith@example.com"
+    },
+    {
+      "id": 3,
+      "name": "Alice Johnson",
+      "login": "alicej",
+      "password": "pass1234",
+      "phone_num": "+5551234567",
+      "email": "alice@example.com"
+    }
   ]
 }
