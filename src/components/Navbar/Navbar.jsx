@@ -12,6 +12,8 @@ import Baasket from '../Baasket/Baasket';
 import Catalog from "../Catalog/Catalog";
 import DeliveriesPayment from '../DeliveriesPayment/DeliveriesPayment';
 import MainPage from '../MainPage/MainPage';
+import Authorization from "../Authorization/Authorization";
+import WearPage from "../WearPage/WearPage";
 
 function Navbar() {
     const [activePath, setActivePath] = useState('/');
@@ -65,7 +67,7 @@ function Navbar() {
                     <Link to={'/Basket'}>
                         <img src={BasketIcon} alt="BasketIcon"/>
                     </Link>
-                    <Link to={'/profile'}>
+                    <Link to={'/auth'}>
                         <img src={ProfileIcon} alt="ProfileIcon"/>
                     </Link>
                 </div>
@@ -77,9 +79,10 @@ function Navbar() {
                 <Route path={'/delivery'} element={<DeliveriesPayment/>}/>
                 <Route path={'/about_us'} element={'about us'}/>
                 <Route path={'/contact'} element={'contact'}/>
-                <Route path={'/profile'} element={'profile'}/>
+                <Route path={'/auth'} element={<Authorization/>}/>
                 <Route path={'/basket'} element={<Baasket/>}/>
-                <Route path={'/search'} element={'profile'}/>
+                <Route path={'/product/:id'} element={<WearPage/>}/>
+                <Route path={'/search'} element={'search'}/>
                 <Route path={'/catalog-items'} element={<Catalog/>}/>
             </Routes>
         </>
