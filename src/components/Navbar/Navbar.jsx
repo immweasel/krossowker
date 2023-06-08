@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {Link, Routes, Route, useLocation} from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link, Routes, Route, useLocation } from 'react-router-dom';
 import Menu from "../Menu/Menu";
 import styles from './Navbar.module.scss';
 
@@ -14,6 +14,7 @@ import DeliveriesPayment from '../DeliveriesPayment/DeliveriesPayment';
 import MainPage from '../MainPage/MainPage';
 import Authorization from "../Authorization/Authorization";
 import WearPage from "../WearPage/WearPage";
+import Profile from "../Profile/Profile";
 
 function Navbar() {
     const [activePath, setActivePath] = useState('/');
@@ -62,28 +63,29 @@ function Navbar() {
                 </div>
                 <div className={styles.navbar__container}>
                     <Link to={'/Search'}>
-                        <img src={SearchIcon} alt="SearchIcon"/>
+                        <img src={SearchIcon} alt="SearchIcon" />
                     </Link>
                     <Link to={'/Basket'}>
-                        <img src={BasketIcon} alt="BasketIcon"/>
+                        <img src={BasketIcon} alt="BasketIcon" />
                     </Link>
-                    <Link to={'/auth'}>
-                        <img src={ProfileIcon} alt="ProfileIcon"/>
+                    <Link to={'/profile'}>
+                        <img src={ProfileIcon} alt="ProfileIcon" />
                     </Link>
                 </div>
             </nav>
 
             <Routes>
-                <Route path={'/'} element={<MainPage/>}/>
-                <Route path={'/catalog'} element={<Menu/>}/>
-                <Route path={'/delivery'} element={<DeliveriesPayment/>}/>
-                <Route path={'/about_us'} element={'about us'}/>
-                <Route path={'/contact'} element={'contact'}/>
-                <Route path={'/auth'} element={<Authorization/>}/>
-                <Route path={'/basket'} element={<Baasket/>}/>
-                <Route path={'/product/:id'} element={<WearPage/>}/>
-                <Route path={'/search'} element={'search'}/>
-                <Route path={'/catalog-items'} element={<Catalog/>}/>
+                <Route path={'/'} element={<MainPage />} />
+                <Route path={'/catalog'} element={<Menu />} />
+                <Route path={'/delivery'} element={<DeliveriesPayment />} />
+                <Route path={'/about_us'} element={'about us'} />
+                <Route path={'/contact'} element={'contact'} />
+                <Route path={'/auth'} element={<Authorization />} />
+                <Route path={'/basket'} element={<Baasket />} />
+                <Route path={'/product/:id'} element={<WearPage />} />
+                <Route path={'/search'} element={'search'} />
+                <Route path={'/catalog-items'} element={<Catalog />} />
+                <Route path={'/profile'} element={<Profile />} />
             </Routes>
         </>
     );

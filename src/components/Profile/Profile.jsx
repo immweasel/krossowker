@@ -1,26 +1,11 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import styles from './Profile.module.scss'
-import {useParams} from "react-router-dom";
-import axios from "axios";
-
+import { useLocation, useNavigate } from "react-router-dom";
 
 function Profile() {
-    const {userId} = useParams()
-    const [user, setUser] = useState(null)
 
-    useEffect(() => {
-        const fetchUserData = async () => {
-            axios.get(`http://localhost:3001/users/${userId}`)
-                .then(res => {
-                    setUser(res.data)
-                })
-                .catch(e => {
-                    console.error('Error: ', e)
-                })
-        }
-
-        fetchUserData()
-    }, [userId])
+    const location = useLocation()
+    const { user } = location.state
 
     return (
         <div className={styles.profile}>
@@ -29,13 +14,22 @@ function Profile() {
             <div className={styles.profile__data_cantainer}>
                 <p style={{
                     color: '#fff'
-                }}>Имя: {user.name} </p>
-                {/*<p style={{*/}
-                {/*    color: '#fff'*/}
-                {/*}}>Номер телефона: {user.phone_num} </p>*/}
+                }}>
+                    Имя:
+                    {user.name} </p>
+
                 <p style={{
                     color: '#fff'
-                }}>Почта: {user.email} </p>
+                }}>
+                    Номер телефона:
+                    <span>{user.phone_num}</span>
+                </p>
+
+                <p style={{
+                    color: '#fff'
+                }}>
+                    Почта:
+                    {user.email} </p>
             </div>
         </div>
     )
