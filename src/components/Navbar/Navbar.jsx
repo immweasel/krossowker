@@ -68,7 +68,7 @@ function Navbar() {
                     <Link to={'/Basket'}>
                         <img src={BasketIcon} alt="BasketIcon" />
                     </Link>
-                    <Link to={'/profile'}>
+                    <Link to={'/auth'}>
                         <img src={ProfileIcon} alt="ProfileIcon" />
                     </Link>
                 </div>

@@ -1,4 +1,7 @@
 .mainPage {
-  display: block;
-  margin-top: 30px;
+    .main__scroller {
+        background-image: src('../../assets/images/main_screen.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
