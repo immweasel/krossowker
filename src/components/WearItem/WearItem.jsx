@@ -1,30 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styles from './WearItem.module.scss'
-import axios from 'axios';
 import { Link } from 'react-router-dom';
+import { useGetWearQuery } from '../../redux/wearApi';
 
 function WearItem() {
 
-    const [shoes, setShoes] = useState([])
+    const { data = [], isLoading } = useGetWearQuery();
 
-    useEffect(() => {
-        const fetchShoes = async () => {
-            try {
-                const res = await axios.get('http://localhost:3001/wear')
-                setShoes(res.data)
-            } catch (e) {
-                console.log('Error: ', e)
-            }
-        }
-
-        fetchShoes()
-    }, [])
+    if (isLoading) return <p style={{
+        color: '#fff'
+    }}>Loading...</p>
 
 
     return (
         <div className={styles.wearItem}>
-            {shoes.map(item => (
-                <div className={styles.wearItem_card}>
+            {data.map(item => (
+                <div className={styles.wearItem_card} key={item.id}>
                     <div className={styles.wearItem_card__cont}>
                         <img src={item.img} alt={item.img} className={styles.wearItem_card_img} />
                     </div>
